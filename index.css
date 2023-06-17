@@ -1,0 +1,79 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* add min-heigh of 100vh so that the body that you would like to center within the container */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efeff2;
+}
+
+.calculator {
+    height: 550px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.screen {
+    width: 100%;
+    height: 150px;
+    color: white;
+    pointer-events: none;
+    border: none;
+    background-color:black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+
+button {
+    flex: 0 0 22%;
+    justify-content: center; 
+    height: 60px;
+    width: 52px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.btn-orange {
+    background-color: orange;
+    color: white;
+}
+
+.btn-grey {
+    background-color: darkgrey;
+    color: white;
+}
+
+.btn-equal {
+    background-color: green;
+    color: white;
+}
+
+.btn-clear {
+    background-color: red;
+    color: white;
+}
